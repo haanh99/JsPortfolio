@@ -1,261 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- RemixiIcons -->
-    <link rel="stylesheet" href="node_modules/remixicon/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="node_modules/remixicon/fonts/remixicon.css" />
     <!-- Css -->
-     <link rel="stylesheet" href="styles.css">
-     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
     <title>Responsive portfolio - GiangHD</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="" class="nav__logo">
-                <span class="nav__logo-circle">HD</span>
-                <span class="nav__logo-name">Giang</span>
-            </a>
-            <div class="nav__menu" id="nav-menu">
-                <span class="nav__title">Menu</span>
-                <h3 class="nav__name">Giang</h3>
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">About Me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Projects</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Contact</a>
-                    </li>
-                </ul>
+      <nav class="nav container">
+        <a href="" class="nav__logo">
+          <span class="nav__logo-circle">HD</span>
+          <span class="nav__logo-name">Giang</span>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menu</span>
+          <h3 class="nav__name">Giang</h3>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
 
-                <!-- closeButton -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>              
-            </div>
-            <div class="nav__buttons">
-                <!-- toggleBtn -->
-                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-3-line"></i>
-                 </div>
-            </div>
-        </nav>
+          <!-- closeButton -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__buttons">
+          <!-- Theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+          <!-- toggleBtn -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="main">
-        <!-- HOME SECTION -->
-         <section class="home section" id="home">
-            <div class="hone__container container grid">
-                <h1 class="home__name">GiangHD</h1>
-                <div class="home__perfil">
-                    <div class="home__image">
-                        <img src="img/home-perfil.jpg" alt="image" class="home__img">
-                        <div class="home__shadow"></div>
-                        <img src="img/curved-arrow.svg" alt="" class="home__arrow">
-                        <img src="img/random-lines.svg" alt="" class="home__line">
-                        <div class="geometric-box"></div>
-                    </div>
-                    <div class="home__social">
-                        <a href="" target="_blank" class="home__social-link"><i class="ri-facebook-box-line"></i></a>
-                        <a href="" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill"></i></a>
-                    </div>
-                </div>
-
-                <div class="home__info">
-                    <p class="home__description">
-                        <b>Frontend Developer</b>With foundation in HTML, CSS, and JavaScript, I specialize in crafting responsive and visually appealing websites. My aim is to create high-quality websites for clients, continuously improve my skills to deliver increasingly enhanced services for my customers.
-                    </p>
-                    <a href="#about" class="home__scroll">
-                        <div class="home__scroll-box">
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                        <span class="home__scroll-text">Scroll down</span>
-                    </a>
-                </div>
+      <!-- HOME SECTION -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <h1 class="home__name">GiangHD</h1>
+          <div class="home__perfil">
+            <div class="home__image">
+              <img src="img/home-perfil.jpg" alt="image" class="home__img" />
+              <div class="home__shadow"></div>
+              <img src="img/curved-arrow.svg" alt="" class="home__arrow" />
+              <img src="img/random-lines.svg" alt="" class="home__line" />
+              <div class="geometric-box"></div>
             </div>
-         </section>
-        <!-- ABOUT SECTION -->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <h2 class="section__title-1">About Me</h2>
-
-                <div class="about__perfil">
-                    <div class="about__image">
-                        <img src="img/about-perfil.jpg" alt="image" class="about__img">
-                        <div class="about__shadow"></div>
-                        <div class="geometric-box"></div>
-                        <img src="img/random-lines.svg" alt="" class="about__line">
-                        <div class="about__box"></div>
-                    </div>
-                </div>
-                <div class="about__info">
-                    <p class="about__description">
-                        <b>My goal</b> is to merge creativity with functionality, always striving to stay updated with the latest industry trends and best practices. I thrive in collaborative environments and am dedicated to delivering high-quality, user-centric solutions. Let's craft something exceptional together.
-                    </p>
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <b>My Skills are:</b> HTML, CSS, and JavaScript.
-                        </li>
-                    </ul>
-                    <div class="about__buttons">
-                        <a href="#contact" class="button">
-                            <i class="ri-mail-send-fill"></i> Contact me
-                        </a>
-                        <a href="" class="button__ghost">
-                            <i class="ri-linkedin-line"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="home__social">
+              <a href="" target="_blank" class="home__social-link"
+                ><i class="ri-facebook-box-line"></i
+              ></a>
+              <a href="" target="_blank" class="home__social-link"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
             </div>
-        </section>
-        <!-- Services section -->
-        <section class="services section" id="project">
+          </div>
+
+          <div class="home__info">
+            <p class="home__description">
+              <b>Frontend Developer</b>With foundation in HTML, CSS, and
+              JavaScript, I specialize in crafting responsive and visually
+              appealing websites. My aim is to create high-quality websites for
+              clients, continuously improve my skills to deliver increasingly
+              enhanced services for my customers.
+            </p>
+            <a href="#about" class="home__scroll">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <span class="home__scroll-text">Scroll down</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">About Me</h2>
+
+          <div class="about__perfil">
+            <div class="about__image">
+              <img src="img/about-perfil.jpg" alt="image" class="about__img" />
+              <div class="about__shadow"></div>
+              <div class="geometric-box"></div>
+              <img src="img/random-lines.svg" alt="" class="about__line" />
+              <div class="about__box"></div>
+            </div>
+          </div>
+          <div class="about__info">
+            <p class="about__description">
+              <b>My goal</b> is to merge creativity with functionality, always
+              striving to stay updated with the latest industry trends and best
+              practices. I thrive in collaborative environments and am dedicated
+              to delivering high-quality, user-centric solutions. Let's craft
+              something exceptional together.
+            </p>
+            <ul class="about__list">
+              <li class="about__item">
+                <b>My Skills are:</b> HTML, CSS, and JavaScript.
+              </li>
+            </ul>
+            <div class="about__buttons">
+              <a href="#contact" class="button">
+                <i class="ri-mail-send-fill"></i> Contact me
+              </a>
+              <a href="" class="button__ghost">
+                <i class="ri-linkedin-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services section -->
+      <section class="services section">
+        <h2 class="section__title-2">
+          <span>Services</span>
+        </h2>
+        <div class="services__conainer container grid">
+          <article class="services__card">
+            <div class="services__border"></div>
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-layout-3-line"></i>
+              </div>
+              <h2 class="services__title">Web Development</h2>
+              <p class="services__description">
+                Create a smooth and user-friendly user interface that helps
+                customers interact easily and comfortably on their website.
+              </p>
+            </div>
+          </article>
+          <article class="services__card">
+            <div class="services__border"></div>
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-tools-fill"></i>
+              </div>
+              <h2 class="services__title">Technical support</h2>
+              <p class="services__description">
+                Ensure the website operates smoothly and is continuously updated
+                with new technical requirements, as well as support customers
+                during use.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- PROJECT SECTION -->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+          <span>Projects</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <articale class="projects__card">
+            <div class="projects__image">
+              <img src="/img/project-1.jpg" alt="image" class="projects__img" />
+
+              <a href="#" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Freefont Project</h3>
+              <h2 class="projects__title">Light and dark</h2>
+
+              <p class="projectst__description">
+                A simple project using HTML, CSS, and JavaScript.
+              </p>
+            </div>
+            <div class="projects__buttons">
+              <a href="" target="blank" class="projects__link">
+                <i class="ri-github-line"></i> View project
+              </a>
+            </div>
+          </articale>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
             <h2 class="section__title-2">
-                <span>Services</span>
-            </h2>
-            <div class="services__conainer container grid">
-                <article class="services__card">
-                    <div class="services__border"></div>
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-layout-3-line"></i>
-                        </div>
-                        <h2 class="services__title">Web Development</h2>
-                        <p class="services__description">
-                            Create a smooth and user-friendly user interface that helps customers interact easily and comfortably on their website.
-                        </p>
-                    </div>
-                </article>
-                <article class="services__card">
-                    <div class="services__border"></div>
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-tools-fill"></i>
-                        </div>
-                        <h2 class="services__title">Technical support</h2>
-                        <p class="services__description">Ensure the website operates smoothly and is continuously updated with new technical requirements, as well as support customers during use.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- PROJECT SECTION -->
-         <section class="projects section" id="projects">
-            <h2 class="section__title-1">
-                <span>Projects</span>
+              <span>Contact Me</span>
             </h2>
 
-            <div class="projects__container container grid">
-                <articale class="projects__card">
-                    <div class="projects__image">
-                        <img src="/img/project-1.jpg" alt="image" class="projects__img">
+            <p class="contact__description-1">
+              I will read all email. Send me an email and I will reply to you.
+            </p>
+            <p class="contact__description-2">
+              I need to know your name and email address.
+            </p>
+            <div class="geometric-box"></div>
+          </div>
 
-                        <a href="#" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">Freefont Project</h3>
-                        <h2 class="projects__title">Light and dark</h2>
+          <div class="contact__email">
+            <h2 class="contact__title">Send me a message</h2>
 
-                        <p class="projectst__description">
-                            A simple project using HTML, CSS, and JavaScript.
-                        </p>
-                    </div>
-                    <div class="projects__buttons">
-                        <a href="" target="blank" class="projects__link">
-                            <i class="ri-github-line"></i> View project
-                        </a>
-                    </div>
-                </articale>
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    name="user_name"
+                    class="contact__input"
+                    id="name"
+                    required
+                    placeholder="First name"
+                  />
+                  <label for="name" class="contact__label">First name</label>
+                </div>
+
+                <div class="contact__box">
+                  <input
+                    type="email"
+                    name="user_email"
+                    class="contact__input"
+                    id="email"
+                    required
+                    placeholder="Email address"
+                  />
+                  <label for="email" class="contact__label"
+                    >Email address</label
+                  >
+                </div>
+              </div>
+
+              <div class="contact__box">
+                <input
+                  type="text"
+                  name="user_title"
+                  class="contact__input"
+                  id="title"
+                  required
+                  placeholder="title"
+                />
+                <label for="title" class="contact__label">Title</label>
+              </div>
+
+              <div class="contact__box contact__area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact__input"
+                  required
+                  placeholder="Your message"
+                ></textarea>
+                <label for="message" class="contact__label">Message</label>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button class="contact__button button">
+                <i class="ri-send-plane-line"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="contact__social">
+            <img
+              src="img/curved-arrow.svg"
+              alt=""
+              class="contact__social-arrow"
+            />
+
+            <div class="contact__social-data">
+              <div>
+                <p class="conatct__social-description-1">
+                  Does not send email.
+                </p>
+
+                <p class="contact__social-description-1">
+                  Write me on my social network.
+                </p>
+              </div>
+
+              <div class="contact__social-links">
+                <a href="" target="_blank" class="contact__social-link">
+                  <i class="ri-facebook-box-line"></i>
+                </a>
+                <a href="" target="_blank" class="contact__social-link">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </div>
             </div>
-         </section>
-        <!-- Contact section -->
-        <section class="contact section" id="contact">
-            <div class="contact__container grid">
-                <div class="contact__data">
-                    <h2 class="section__title-2">
-                        <span>Contact Me</span>
-                    </h2>
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER SECTION -->
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <ul class="footer__links">
+            <li>
+              <a href="#about" class="footer__link">ABOUT</a>
+            </li>
+            <li>
+              <a href="#sevices" class="footer__link">SEVICES</a>
+            </li>
+            <li>
+              <a href="projects" class="footer__link">PROJECTS</a>
+            </li>
+          </ul>
+          <span class="footer__copy"> &#169; Code by <a href="">GiangHD </a></span>
+        </div>
+      </footer>
 
-                    <p class="contact__description-1">
-                        I will read all email. Send me an email and I will reply to you.
-                    </p>
-                    <p class="contact__description-2">
-                        I need to know your name and email address.
-                    </p>
-                    <div class="geometric-box"></div>
-                </div>
-
-                <div class="contact__email">
-                    <h2 class="contact__title">
-                        Send me a message
-                    </h2>
-
-                    <form action="" class="contact__form" id="contact-form">
-                        <div class="contact__group">
-                            <div class="contact__box">
-                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First name">
-                                <label for="name" class="contact__label">First name</label>
-                            </div>
-
-                            <div class="contact__box">
-                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email address">
-                                <label for="email" class="contact__label">Email address</label>
-                            </div>
-                        </div>
-
-                        <div class="contact__box">
-                            <input type="text" name="user_title" class="contact__input" id="title" required placeholder="title">
-                            <label for="title" class="contact__label">Title</label>
-                        </div>
-
-                        <div class="contact__box contact__area">
-                    
-                            <textarea name="user_message" id="message" class="contact__input" required placeholder="Your message"></textarea>
-                            <label for="message" class="contact__label">Message</label>
-                        </div>
-                        
-                        <button class="contact__button button">
-                            <i class="ri-send-plane-line"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-
-                <div class="contact__social">
-                    <img src="img/curved-arrow.svg" alt="" class="contact__social-arrow">
-
-                    <div class="contact__social-data">
-                        <div>
-                            <p class="conatct__social-description-1">
-                                Does not send email.
-                            </p>
-
-                            <p class="contact__social-description-1">
-                                Write me on my social network.
-                            </p>
-                        </div>
-
-                        <div class="contact__social-links">
-                            <a href="" target="_blank" class="contact__social-link">
-                                <i class="ri-facebook-box-line"></i>
-                            </a>
-                            <a href="" target="_blank" class="contact__social-link">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- SCROLL UP -->
+       <a href="" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
     </main>
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </body>
 </html>
